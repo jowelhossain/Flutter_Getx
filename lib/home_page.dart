@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project/screen/alart_dialog.dart';
+import 'package:flutter_getx_project/screen/bottom_sheet.dart';
 import 'package:flutter_getx_project/screen/snackbar.dart';
 import 'package:get/get.dart';
 
@@ -25,6 +26,9 @@ class _HomePageState extends State<HomePage> {
             ElevatedButton(onPressed: (){
               Get.to(AlartDialogTest());
             }, child: Text("Alart Dialog")),
+            ElevatedButton(onPressed: (){
+              Get.to(BottomSheetTest());
+            }, child: Text("Bottom Sheet")),
 
           ],
         ),
