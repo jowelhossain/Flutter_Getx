@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project/home_page.dart';
+import 'package:flutter_getx_project/screen/languages.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
@@ -14,6 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner:false,
+      translations: Languages(),
+      locale: Locale('en','US'),
+      fallbackLocale: Locale('en','US'),
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.

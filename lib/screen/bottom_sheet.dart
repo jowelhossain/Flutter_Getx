@@ -28,6 +28,20 @@ ElevatedButton(onPressed: (){
       Card(
         color:Colors.lightGreenAccent,
         child: ListTile(
+          onTap: (){
+            Get.changeTheme(ThemeData.light());
+          },
+          leading: Icon(Icons.light_mode),
+          title:Center(child: Text("Bottom Sheet")),
+        ),
+      ) ,
+      Card(
+        color:Colors.lightGreenAccent,
+        child: ListTile(
+          onTap: (){
+            Get.changeTheme(ThemeData.dark());
+          },
+          leading: Icon(Icons.dark_mode),
           title:Center(child: Text("Bottom Sheet")),
         ),
       )
