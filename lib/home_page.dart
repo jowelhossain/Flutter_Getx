@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_project/screen/alart_dialog.dart';
 import 'package:flutter_getx_project/screen/bottom_sheet.dart';
+import 'package:flutter_getx_project/screen/counter.dart';
 import 'package:flutter_getx_project/screen/languages.dart';
 import 'package:flutter_getx_project/screen/snackbar.dart';
 import 'package:get/get.dart';
@@ -32,7 +33,11 @@ class _HomePageState extends State<HomePage> {
             }, child: Text("Bottom Sheet")),
       ElevatedButton(onPressed: (){
         Get.to(LanguageConvert());
-      },child: Text("Language Translate"),)
+      },child: Text("Language Translate"),),
+
+            ElevatedButton(onPressed: (){
+              Get.to(CounterTest());
+            },child: Text("Counter With GetX"),)
 
           ],
         ),
