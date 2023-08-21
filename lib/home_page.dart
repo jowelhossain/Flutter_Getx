@@ -3,6 +3,7 @@ import 'package:flutter_getx_project/screen/alart_dialog.dart';
 import 'package:flutter_getx_project/screen/bottom_sheet.dart';
 import 'package:flutter_getx_project/screen/counter.dart';
 import 'package:flutter_getx_project/screen/languages.dart';
+import 'package:flutter_getx_project/screen/slider.dart';
 import 'package:flutter_getx_project/screen/snackbar.dart';
 import 'package:get/get.dart';
 
@@ -37,7 +38,11 @@ class _HomePageState extends State<HomePage> {
 
             ElevatedButton(onPressed: (){
               Get.to(CounterTest());
-            },child: Text("Counter With GetX"),)
+            },child: Text("Counter Test"),) ,
+
+            ElevatedButton(onPressed: (){
+              Get.to(SliderTest());
+            },child: Text("Slider Test"),)
 
           ],
         ),
