@@ -5,6 +5,7 @@ import 'package:flutter_getx_project/screen/counter.dart';
 import 'package:flutter_getx_project/screen/languages.dart';
 import 'package:flutter_getx_project/screen/slider.dart';
 import 'package:flutter_getx_project/screen/snackbar.dart';
+import 'package:flutter_getx_project/screen/switch.dart';
 import 'package:get/get.dart';
 
 class HomePage extends StatefulWidget {
@@ -42,7 +43,11 @@ class _HomePageState extends State<HomePage> {
 
             ElevatedButton(onPressed: (){
               Get.to(SliderTest());
-            },child: Text("Slider Test"),)
+            },child: Text("Slider Test"),),
+
+            ElevatedButton(onPressed: (){
+              Get.to(SwitchTest());
+            },child: Text("Switch"),)
 
           ],
         ),
