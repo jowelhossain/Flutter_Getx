@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_getx_project/screen/alart_dialog.dart';
 import 'package:flutter_getx_project/screen/bottom_sheet.dart';
 import 'package:flutter_getx_project/screen/counter.dart';
+import 'package:flutter_getx_project/screen/favourite.dart';
 import 'package:flutter_getx_project/screen/languages.dart';
 import 'package:flutter_getx_project/screen/slider.dart';
 import 'package:flutter_getx_project/screen/snackbar.dart';
@@ -47,7 +48,11 @@ class _HomePageState extends State<HomePage> {
 
             ElevatedButton(onPressed: (){
               Get.to(SwitchTest());
-            },child: Text("Switch"),)
+            },child: Text("Switch"),),
+
+            ElevatedButton(onPressed: (){
+              Get.to(FavouriteTest());
+            },child: Text("Favourite List"),),
 
           ],
         ),
